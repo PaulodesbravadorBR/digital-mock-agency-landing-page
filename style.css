@@ -1,0 +1,879 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.logo span {
+  font-family: "Teko", sans-serif;
+  color: #180f4a;
+  font-size: 34px;
+  font-weight: 800;
+  margin-left: 10%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navBar {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px;
+  background: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.logo {
+  flex: 20%;
+  text-align: left;
+  padding-left: 0px;
+  /* border: 1px solid red; */
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* border: 1px solid black; */
+  padding: 20px;
+}
+
+.logo span {
+  font-family: "Syne", sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  margin-left: 0;
+  color: #180f4a;
+
+  /* efeito de transição de cor logo */
+  display: inline-block;
+  background: linear-gradient(90deg, #180f4a 50%, #ff2978 50%);
+  background-size: 200% 100%;
+  background-position: 0 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.5s ease;
+  cursor: pointer;
+}
+
+.logo span:hover {
+  background-position: 100% 0;
+}
+
+.menu a {
+  color: #180f4a;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 33px;
+}
+
+/* Aplica o hover rosa apenas nos links comuns, protegendo o botão */
+.menu a:not(#contact-btn):hover {
+  color: #ff2978;
+  border-top: 3px solid #180f4a;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* .headline p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #431F76;
+    margin-top: 20px;
+} */
+
+/* Estilização do Botão de Contato */
+#contact-btn {
+  background: #180f4a;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin: auto;
+}
+
+#contact-btn:hover {
+  border: none;
+  background: #ff2978;
+}
+
+.headerBox {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.headline {
+  margin-left: 10%;
+  flex: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.img-headline {
+  margin-right: 10%;
+  flex: 40%;
+  text-align: center;
+}
+
+.headline-title {
+  font-weight: 900;
+  font-size: 33px;
+  color: #180f4a;
+  padding: 0;
+  padding-bottom: 3px;
+  margin: 0;
+}
+
+.headline .headlinefirstH2,
+.headline p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 4px;
+  color: #431f76;
+}
+
+.headline p {
+  margin-top: 20px;
+}
+
+.contact-btn {
+  background: #ff2978;
+  padding: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.contact-btn:hover {
+  background: #180f4a;
+  color: #ffffff;
+}
+
+section {
+  display: inline-block;
+  margin-top: 80px;
+  /* border: 1px solid black; */
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5%;
+  text-align: center;
+  width: 90%;
+}
+
+h2.section {
+  width: 100%;
+  font-size: 30px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #180f4a;
+  padding-bottom: 70px;
+}
+
+.services {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.card {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  margin: 1px;
+  border: 1px solid #ff2978;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 56px;
+  height: 56px;
+}
+
+.card:hover .card-text {
+  display: none;
+}
+
+.hidden-text {
+  display: none;
+}
+
+.card:hover {
+  background: #ff2978;
+  color: #ffffff;
+  padding: 40px;
+}
+
+.card:hover img {
+  display: none;
+}
+
+.card:hover .hidden-text {
+  display: block;
+}
+
+footer {
+  margin-top: 100px;
+  height: 300px;
+  background-image: linear-gradient(180deg, #180f4a, #090422, black);
+  text-align: center;
+  border-top: 5px solid #ff2978;
+  position: relative;
+  padding: 20px;
+}
+
+.logoFoolter {
+  padding: 100px;
+}
+
+.agency {
+  color: #ff2978;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.foolterP {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.foolterP a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.foolterP a:hover {
+  color: #ff2978;
+}
+
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.chat-toggle {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  background: #2ed10f;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.chat-toggle img {
+  width: 36px;
+}
+
+/* opções escondidas por padrão */
+.chat-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition:
+    opacity 0.3s,
+    transform 0.3s,
+    visibility 0.3s;
+}
+
+/* quando o widget recebe a classe "open" */
+.chat-widget.open .chat-options {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.chat-option {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.chat-option img {
+  width: 28px;
+}
+
+.chat-toggle:hover,
+.chat-option:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+.chat-toggle {
+  width: 70px;
+  height: 70px;
+  padding: 16px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 50%;
+  background: #2ed10f;
+  cursor: pointer;
+}
+
+.chat-toggle img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: brightness(0) invert(1); /* deixa o ícone branco */
+}
+
+/* ===== Seção "More about what we offer" ===== */
+section.offer {
+  margin-top: 0;
+}
+
+.offer h2.section {
+  padding-bottom: 30px;
+}
+
+.offer-intro {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #431f76;
+}
+
+/* --- linha do tempo: passos 01 a 04 em uma coluna --- */
+.offer-steps {
+  --badge: 56px; /* tamanho da bolinha com o número */
+  list-style: none;
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.offer-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--badge) 1fr;
+  column-gap: 28px;
+  padding-bottom: 64px;
+}
+
+.offer-step:last-child {
+  padding-bottom: 0;
+}
+
+/* a linha que liga cada bolinha à próxima:
+   ::before é o trilho claro, ::after é o preenchimento rosa */
+.offer-step::before,
+.offer-step::after {
+  content: "";
+  position: absolute;
+  left: calc(var(--badge) / 2 - 1px);
+  top: calc(var(--badge) / 2);
+  width: 2px;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.offer-step::before {
+  background: #eadff5;
+}
+
+.offer-step::after {
+  background: #ff2978;
+  transform-origin: top;
+  /* --seg vai de 0 a 1 e é atualizado pelo JavaScript conforme a rolagem;
+     sem JavaScript fica 1 (linha toda preenchida) */
+  transform: scaleY(var(--seg, 1));
+}
+
+.offer-step:last-child::before,
+.offer-step:last-child::after {
+  display: none;
+}
+
+.offer-number {
+  position: relative;
+  z-index: 1; /* fica por cima da linha */
+  width: var(--badge);
+  height: var(--badge);
+  display: grid;
+  place-items: center;
+  border: 3px solid #ff2978;
+  border-radius: 50%;
+  background: #ff2978;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 0 0 8px #ffffff; /* "respiro" branco ao redor da bolinha */
+}
+
+.offer-content {
+  padding-top: 8px;
+}
+
+.offer-content h3 {
+  font-size: 24px;
+  color: #180f4a;
+  margin-bottom: 12px;
+}
+
+.offer-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #431f76;
+}
+
+.offer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.offer-tags li {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #f3edff;
+  color: #180f4a;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* --- animação em cascata ---
+   Só roda se o JavaScript estiver ativo (classe "js") e se a pessoa não
+   pediu para reduzir animações. Sem isso, tudo aparece normalmente. */
+@media (prefers-reduced-motion: no-preference) {
+  /* estado inicial: bolinha "apagada" e textos invisíveis */
+  .js .offer-number {
+    transition:
+      background 0.5s ease,
+      color 0.5s ease,
+      border-color 0.5s ease,
+      transform 0.5s ease;
+  }
+
+  .js .offer-step:not(.visible) .offer-number {
+    background: #ffffff;
+    border-color: #e3d9ee;
+    color: #b9a9cc;
+    transform: scale(0.85);
+  }
+
+  .js .offer-content > * {
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease;
+  }
+
+  .js .offer-step:not(.visible) .offer-content > * {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  /* cascata: título, depois parágrafo, depois as tags */
+  .js .offer-content > :nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .js .offer-content > :nth-child(2) {
+    transition-delay: 0.25s;
+  }
+  .js .offer-content > :nth-child(3) {
+    transition-delay: 0.4s;
+  }
+}
+
+/* animação reduzida: a linha fica toda preenchida, sem acompanhar a rolagem */
+@media (prefers-reduced-motion: reduce) {
+  .offer-step::after {
+    transform: none;
+  }
+}
+
+/* ===== Efeito de aparecer ao rolar a página ===== */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.js .reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* respeita quem desativou animações no sistema */
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* linha do tempo no celular: bolinha e textos um pouco menores */
+@media (max-width: 768px) {
+  .offer-steps {
+    --badge: 44px;
+  }
+
+  .offer-step {
+    column-gap: 16px;
+    padding-bottom: 48px;
+  }
+
+  .offer-number {
+    font-size: 16px;
+    box-shadow: 0 0 0 6px #ffffff;
+  }
+
+  .offer-content {
+    padding-top: 4px;
+  }
+
+  .offer-content h3 {
+    font-size: 20px;
+  }
+
+  .offer-content p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+
+/* ===== Redes sociais no footer ===== */
+.social-links {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 16px;
+}
+
+.social-links img {
+  width: 28px;
+  height: 28px;
+  display: block;
+  filter: brightness(0) invert(1); /* ícone branco; apague esta linha se seus SVGs já forem brancos */
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
+}
+
+.social-links a:hover img {
+  transform: translateY(-3px);
+  opacity: 0.8;
+}
+
+/* =====================================================
+   RESPONSIVIDADE
+   Fica no FIM do arquivo de propósito: regras iguais
+   que vêm depois sobrescrevem as de cima.
+   Cada @media precisa ser fechado ANTES de abrir o próximo
+   (um @media dentro do outro só vale na menor das duas larguras).
+   ===================================================== */
+
+/* título do hero: antes era style="font-size:60px" no HTML, que não dá para
+   sobrescrever no mobile. Agora ele encolhe sozinho em telas menores. */
+.headline h1.headline-title {
+  font-size: clamp(36px, 6vw, 60px);
+}
+
+/* botão hambúrguer: escondido no desktop (só aparece até 763px) */
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: #180f4a;
+  border-radius: 2px;
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
+}
+
+/* vira um X quando o menu está aberto */
+.menu-toggle.open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+@keyframes menuEntra {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- até 1050px: barra mais compacta ----------
+   O menu tem ~570px de largura. Com os espaçamentos do desktop ele ocupa quase
+   toda a barra: o texto do logo quebra em duas linhas e, mais abaixo, o menu
+   inteiro cai para baixo do logo. Aqui diminuímos os espaços para caber. */
+@media screen and (max-width: 1050px) {
+  .navBar {
+    flex-flow: row nowrap;
+    height: 80px;
+    padding: 0 5%;
+  }
+
+  .logo {
+    flex: 1 1 auto;
+  }
+
+  .logo span {
+    white-space: nowrap;
+  }
+
+  .menu {
+    padding: 0;
+  }
+
+  .menu a {
+    padding: 10px 14px;
+    font-size: 16px;
+  }
+
+  #contact-btn {
+    padding: 10px 20px;
+  }
+
+  /* hero alinhado com a barra, que agora tem 5% de margem */
+  .navBar + .headerBox {
+    padding-top: 20px;
+  }
+
+  .headline {
+    margin-left: 5%;
+  }
+
+  .img-headline {
+    margin-right: 5%;
+  }
+
+  .headline .headlinefirstH2,
+  .headline p {
+    letter-spacing: 2px;
+  }
+}
+
+/* ---------- até 768px: celular ---------- */
+@media screen and (max-width: 768px) {
+  .logo span {
+    font-size: 28px;
+    display: none;
+  }
+
+  /* hero */
+  .headerBox {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headline,
+  .img-headline {
+    flex: none;
+    width: 100%;
+    margin: 0;
+    padding: 0 6%;
+  }
+
+  .headline {
+    align-items: center;
+  }
+
+  .img-headline {
+    margin-top: 30px;
+  }
+
+  .headline .headlinefirstH2,
+  .headline p {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .contact-btn {
+    margin-top: 30px;
+  }
+
+  /* seções */
+  section {
+    margin: 50px 0 0;
+    padding: 0 6%;
+    width: 100%;
+  }
+
+  section.offer {
+    margin-top: 60px;
+  }
+
+  h2.section {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+
+  .offer h2.section {
+    padding-bottom: 20px;
+  }
+
+  .offer-intro {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  /* cards */
+  .services {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .card {
+    display: block;
+    width: 100%;
+    max-width: 440px;
+    margin: 14px auto;
+  }
+
+  /* footer: altura automática e redes sociais centralizadas embaixo */
+  footer {
+    height: auto;
+    margin-top: 60px;
+    padding: 40px 20px 30px;
+  }
+
+  .logoFoolter {
+    padding: 0;
+  }
+
+  .social-links {
+    position: static;
+    transform: none;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  /* chat flutuante um pouco menor */
+  .chat-widget {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .chat-toggle {
+    width: 60px;
+    height: 60px;
+    padding: 14px;
+  }
+}
+
+/* ---------- até 763px: menu hambúrguer à direita ----------
+   Logo à esquerda, botão no canto direito da barra, e o menu abre como um
+   painel colado na lateral direita, logo abaixo da barra. */
+@media screen and (max-width: 763px) {
+  .navBar {
+    position: relative;
+    height: 70px;
+    padding: 0 5%;
+  }
+
+  .logo {
+    flex: 1;
+    text-align: left;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: min(280px, 100%);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 10px 20px 20px;
+    background: #ffffff;
+    border-radius: 0 0 0 12px;
+    box-shadow: 0 12px 24px rgba(24, 15, 74, 0.18);
+    z-index: 900;
+  }
+
+  .menu.open {
+    display: flex;
+    animation: menuEntra 0.2s ease;
+  }
+
+  .menu a {
+    display: block;
+    padding: 14px 10px;
+    font-size: 17px;
+  }
+
+  /* o traço no topo do hover não faz sentido na lista vertical */
+  .menu a:not(#contact-btn):hover {
+    border-top: none;
+  }
+
+  #contact-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    text-align: center;
+  }
+}
